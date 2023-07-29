@@ -33,6 +33,7 @@ fn main() {
     );
     println!("cargo:rustc-link-lib=iwasm");
     println!("cargo:rustc-link-lib=vmlib");
+    println!("cargo:rerun-if-changed=libiwasm/CMakeLists.txt");
 
     let bindings = bindgen::Builder::default()
         .ctypes_prefix("::core::ffi")

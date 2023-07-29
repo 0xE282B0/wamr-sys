@@ -10,12 +10,12 @@ repository = "https://github.com/rahul-thakoor/wamr-sys"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-libc = "0.2.0"
+libc = "0.2.147"
 
 [build-dependencies]
 cc = "1.0"
 cmake = "0.1"
-bindgen = "0.56"
+bindgen = "0.66"
 
 [features]
 default = ["std"]
